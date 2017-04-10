@@ -10,10 +10,10 @@ import XCTest
 @testable import TDD
 
 class TDDTests: XCTestCase {
-    
+    var viewController: ViewController!
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        viewController = ViewController()
     }
     
     override func tearDown() {
@@ -36,10 +36,10 @@ class TDDTests: XCTestCase {
     }
     
      func testMakeHeadline_ReturnsStringWithEachWordStartCapital() {
-        let viewconTroller = ViewController()
+    
         let string = "this is A test headline"
         
-        let headline = viewconTroller.makeHeadline(string:string)
+        let headline = viewController.makeHeadline(string:string)
          XCTAssertEqual(headline, "This Is A Test Headline")
         
     }
