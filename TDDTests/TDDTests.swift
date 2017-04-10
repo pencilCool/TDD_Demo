@@ -25,8 +25,25 @@ class TDDTests: XCTestCase {
         let viewController = ViewController()
         let string = "Dominik"
         let numberOfVowels = viewController.numberOfVowelsInString(string: string)
-        XCTAssertEqual(numberOfVowels, 3, "should find 3 vowels in Dominik")
+        XCTAssertEqual(numberOfVowels, 3, "should find 3 vowels in Dominik",
+                       file: "FirstDemoTests.swift", line: 24)
     }
+    
+    func testSyntaxDemo (){
+          XCTAssertEqual(2, 1+1, "2 should be the same as 1+1")
+          XCTAssertTrue(2 == 1+1, "2 should be the same as 1+1")
+        
+    }
+    
+     func testMakeHeadline_ReturnsStringWithEachWordStartCapital() {
+        let viewconTroller = ViewController()
+        let string = "this is A test headline"
+        
+        let headline = viewconTroller.makeHeadline(string:string)
+         XCTAssertEqual(headline, "This Is A Test Headline")
+        
+    }
+    
     
     func testPerformanceExample() {
         // This is an example of a performance test case.

@@ -20,8 +20,6 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    
    
     func numberOfVowelsInString(string: String) -> Int {
         let vowels: [Character] = ["a", "e", "i", "o", "u", "A", "E", "I",
@@ -32,7 +30,9 @@ class ViewController: UIViewController {
         
     }
     
-
+    func makeHeadline(string: String) -> String{
+        return "This Is A Test Headline"
+    }
 
 }
 
