@@ -10,10 +10,10 @@ import XCTest
 @testable import TDD
 
 class TDDTests: XCTestCase {
-    var viewController: ViewController!
+    var viewController: FirstChapter!
     override func setUp() {
         super.setUp()
-        viewController = ViewController()
+        viewController = FirstChapter()
     }
     
     override func tearDown() {
@@ -22,7 +22,7 @@ class TDDTests: XCTestCase {
     }
     
     func testNumberOfVowelsInString_ShouldReturnNumberOfVowels() {
-        let viewController = ViewController()
+        
         let string = "Dominik"
         let numberOfVowels = viewController.numberOfVowelsInString(string: string)
         XCTAssertEqual(numberOfVowels, 3, "should find 3 vowels in Dominik",
@@ -50,6 +50,10 @@ class TDDTests: XCTestCase {
         let expectedHeadline =  "Here Is Another Example"
         let result = viewController.makeHeadline(string: inputString)
         XCTAssertEqual(result, expectedHeadline)
+    }
+    
+    func testFaileed() {
+        XCTFail("error")
     }
 
     
