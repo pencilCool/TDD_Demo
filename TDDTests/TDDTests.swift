@@ -51,10 +51,6 @@ class TDDTests: XCTestCase {
         let result = viewController.makeHeadline(string: inputString)
         XCTAssertEqual(result, expectedHeadline)
     }
-    
-    func testFaileed() {
-        XCTFail("error")
-    }
 
     
     

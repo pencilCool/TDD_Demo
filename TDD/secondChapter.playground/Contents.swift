@@ -3,3 +3,7 @@
 import UIKit
 
 var str = "Hello, playground"
+
+
+
+//Setting useful Xcode behaviors for testing
