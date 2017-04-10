@@ -37,10 +37,10 @@ class TDDTests: XCTestCase {
     
      func testMakeHeadline_ReturnsStringWithEachWordStartCapital() {
     
-        let string = "this is A test headline"
+         let string = "Here is another Example"
         
-        let headline = viewController.makeHeadline(string:string)
-         XCTAssertEqual(headline, "This Is A Test Headline")
+         let headline = viewController.makeHeadline(string:string)
+           XCTAssertEqual(headline, "Here Is Another Example")
         
     }
     
