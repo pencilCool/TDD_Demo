@@ -41,18 +41,30 @@ class ItemListViewControllerTests: XCTestCase {
                        sut.tableView.delegate as? ItemListDataProvider)
     }
     
-
-
-    
-    
-    
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testItemListViewController_HasAddBarButtonWithSelfAsTarget() {
+        XCTAssertEqual(sut.navigationItem.rightBarButtonItem?.target as? UIViewController,
+                       sut)
     }
+    
+    
+    func testAddItem_PresentsAddItemViewController() {
+        XCTAssertNil(sut.presentedViewController)
+        guard let addButton = sut.navigationItem.rightBarButtonItem else
+        { XCTFail(); return }
+        UIApplication.shared.keyWindow?.rootViewController = sut
+        sut.perform(addButton.action!, with: addButton)
+        XCTAssertNotNil(sut.presentedViewController)
+        XCTAssertTrue(sut.presentedViewController is InputViewController)
+        
+        let inputViewController = sut.presentedViewController as!
+        InputViewController
+        XCTAssertNotNil(inputViewController.titleTextField)
+        
+        
+    }
+    
+    
+
     
 }
 

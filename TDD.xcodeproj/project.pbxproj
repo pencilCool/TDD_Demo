@@ -15,6 +15,7 @@
 		EC07222E1E9C9B09002EDD14 /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC07222D1E9C9B09002EDD14 /* APIClientTests.swift */; };
 		EC0722301E9C9B40002EDD14 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC07222F1E9C9B40002EDD14 /* APIClient.swift */; };
 		EC0722321E9CAD46002EDD14 /* KeychainAccessible.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0722311E9CAD46002EDD14 /* KeychainAccessible.swift */; };
+		EC0722341E9CC274002EDD14 /* StoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0722331E9CC274002EDD14 /* StoryboardTests.swift */; };
 		EC128B651E9B5ABD00E715C2 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC128B641E9B5ABD00E715C2 /* ToDoItem.swift */; };
 		EC128B671E9B5F3600E715C2 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC128B661E9B5F3600E715C2 /* Location.swift */; };
 		EC128B851E9B62E800E715C2 /* ItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC128B841E9B62E800E715C2 /* ItemManager.swift */; };
@@ -63,6 +64,7 @@
 		EC07222D1E9C9B09002EDD14 /* APIClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClientTests.swift; sourceTree = "<group>"; };
 		EC07222F1E9C9B40002EDD14 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		EC0722311E9CAD46002EDD14 /* KeychainAccessible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainAccessible.swift; sourceTree = "<group>"; };
+		EC0722331E9CC274002EDD14 /* StoryboardTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardTests.swift; sourceTree = "<group>"; };
 		EC128B641E9B5ABD00E715C2 /* ToDoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
 		EC128B661E9B5F3600E715C2 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		EC128B6E1E9B612900E715C2 /* LocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
@@ -230,6 +232,7 @@
 				EC128B911E9B813600E715C2 /* Model */,
 				EC128B971E9BB0C400E715C2 /* View */,
 				EC44B5C41E9B1EED005FF88B /* Info.plist */,
+				EC0722331E9CC274002EDD14 /* StoryboardTests.swift */,
 			);
 			path = TDDTests;
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 			files = (
 				EC128B8B1E9B78E100E715C2 /* ItemListViewControllerTests.swift in Sources */,
 				EC128B871E9B780400E715C2 /* TodoItemTests.swift in Sources */,
+				EC0722341E9CC274002EDD14 /* StoryboardTests.swift in Sources */,
 				EC128B881E9B780900E715C2 /* LocationTests.swift in Sources */,
 				EC07222E1E9C9B09002EDD14 /* APIClientTests.swift in Sources */,
 				EC128B901E9B810700E715C2 /* ItemListDataProviderTests.swift in Sources */,

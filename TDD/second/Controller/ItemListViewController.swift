@@ -12,6 +12,18 @@ class ItemListViewController: UIViewController {
     UITableViewDelegate>!
     
    @IBOutlet var tableView: UITableView!
+    
+    @IBAction func addItem(_ sender: Any) {
+        
+        
+        present(InputViewController(),
+                              animated: true,
+                              completion: nil)
+        
+        
+        
+    }
+    
     override func viewDidLoad() {
         tableView.dataSource = dataProvider
         tableView.delegate = dataProvider
