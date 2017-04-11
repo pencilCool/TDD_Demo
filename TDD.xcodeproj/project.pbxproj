@@ -133,9 +133,9 @@
 		EC128B8E1E9B7D4200E715C2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				EC128B8C1E9B7D2600E715C2 /* ItemListDataProvider.swift */,
-				EC07222B1E9C6ADA002EDD14 /* InputViewController.swift */,
 				EC0722241E9C6530002EDD14 /* DetailViewController.swift */,
+				EC07222B1E9C6ADA002EDD14 /* InputViewController.swift */,
+				EC128B8C1E9B7D2600E715C2 /* ItemListDataProvider.swift */,
 				EC44B5DD1E9B4B66005FF88B /* ItemListViewController.swift */,
 			);
 			path = Controller;
@@ -155,9 +155,9 @@
 		EC128B921E9B814200E715C2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				EC128B8F1E9B810700E715C2 /* ItemListDataProviderTests.swift */,
-				EC0722291E9C6A8E002EDD14 /* InputViewControllerTests.swift */,
 				EC0722221E9C64C6002EDD14 /* DetailViewControllerTests.swift */,
+				EC0722291E9C6A8E002EDD14 /* InputViewControllerTests.swift */,
+				EC128B8F1E9B810700E715C2 /* ItemListDataProviderTests.swift */,
 				EC128B8A1E9B78E100E715C2 /* ItemListViewControllerTests.swift */,
 			);
 			path = Controller;
@@ -169,6 +169,7 @@
 				EC128B951E9BB0C000E715C2 /* ItemCellTests.swift */,
 			);
 			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		EC128B981E9BB31D00E715C2 /* view */ = {
@@ -177,17 +178,17 @@
 				EC128B931E9B88C100E715C2 /* ItemCell.swift */,
 			);
 			name = view;
-			path = Controller;
+			path = view;
 			sourceTree = "<group>";
 		};
 		EC44B5A11E9B1EED005FF88B = {
 			isa = PBXGroup;
 			children = (
+				EC0722261E9C666C002EDD14 /* Frameworks */,
 				EC44B5AB1E9B1EED005FF88B /* Products */,
 				EC44B5AC1E9B1EED005FF88B /* TDD */,
 				EC44B5C11E9B1EED005FF88B /* TDDTests */,
 				EC44B5CC1E9B1EED005FF88B /* TDDUITests */,
-				EC0722261E9C666C002EDD14 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -218,9 +219,9 @@
 		EC44B5C11E9B1EED005FF88B /* TDDTests */ = {
 			isa = PBXGroup;
 			children = (
-				EC128B971E9BB0C400E715C2 /* View */,
 				EC128B921E9B814200E715C2 /* Controller */,
 				EC128B911E9B813600E715C2 /* Model */,
+				EC128B971E9BB0C400E715C2 /* View */,
 				EC44B5C41E9B1EED005FF88B /* Info.plist */,
 			);
 			path = TDDTests;
@@ -238,9 +239,9 @@
 		EC44B5E01E9B4E98005FF88B /* second */ = {
 			isa = PBXGroup;
 			children = (
-				EC128B981E9BB31D00E715C2 /* view */,
 				EC128B8E1E9B7D4200E715C2 /* Controller */,
 				EC128B861E9B773C00E715C2 /* Model */,
+				EC128B981E9BB31D00E715C2 /* view */,
 				EC44B5DF1E9B4E89005FF88B /* secondChapter.playground */,
 				EC44B5E11E9B4EF1005FF88B /* struct.png */,
 			);
