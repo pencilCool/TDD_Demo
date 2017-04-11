@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC0722231E9C64C6002EDD14 /* DetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0722221E9C64C6002EDD14 /* DetailViewControllerTests.swift */; };
+		EC0722251E9C6530002EDD14 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0722241E9C6530002EDD14 /* DetailViewController.swift */; };
+		EC0722281E9C666C002EDD14 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0722271E9C666C002EDD14 /* MapKit.framework */; };
+		EC07222A1E9C6A8E002EDD14 /* InputViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0722291E9C6A8E002EDD14 /* InputViewControllerTests.swift */; };
+		EC07222C1E9C6ADA002EDD14 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC07222B1E9C6ADA002EDD14 /* InputViewController.swift */; };
 		EC128B651E9B5ABD00E715C2 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC128B641E9B5ABD00E715C2 /* ToDoItem.swift */; };
 		EC128B671E9B5F3600E715C2 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC128B661E9B5F3600E715C2 /* Location.swift */; };
 		EC128B851E9B62E800E715C2 /* ItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC128B841E9B62E800E715C2 /* ItemManager.swift */; };
@@ -47,6 +52,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC0722221E9C64C6002EDD14 /* DetailViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewControllerTests.swift; sourceTree = "<group>"; };
+		EC0722241E9C6530002EDD14 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		EC0722271E9C666C002EDD14 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		EC0722291E9C6A8E002EDD14 /* InputViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputViewControllerTests.swift; sourceTree = "<group>"; };
+		EC07222B1E9C6ADA002EDD14 /* InputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
 		EC128B641E9B5ABD00E715C2 /* ToDoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
 		EC128B661E9B5F3600E715C2 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		EC128B6E1E9B612900E715C2 /* LocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
@@ -81,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC0722281E9C666C002EDD14 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +112,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC0722261E9C666C002EDD14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC0722271E9C666C002EDD14 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EC128B861E9B773C00E715C2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +134,8 @@
 			isa = PBXGroup;
 			children = (
 				EC128B8C1E9B7D2600E715C2 /* ItemListDataProvider.swift */,
+				EC07222B1E9C6ADA002EDD14 /* InputViewController.swift */,
+				EC0722241E9C6530002EDD14 /* DetailViewController.swift */,
 				EC44B5DD1E9B4B66005FF88B /* ItemListViewController.swift */,
 			);
 			path = Controller;
@@ -135,6 +156,8 @@
 			isa = PBXGroup;
 			children = (
 				EC128B8F1E9B810700E715C2 /* ItemListDataProviderTests.swift */,
+				EC0722291E9C6A8E002EDD14 /* InputViewControllerTests.swift */,
+				EC0722221E9C64C6002EDD14 /* DetailViewControllerTests.swift */,
 				EC128B8A1E9B78E100E715C2 /* ItemListViewControllerTests.swift */,
 			);
 			path = Controller;
@@ -164,6 +187,7 @@
 				EC44B5AC1E9B1EED005FF88B /* TDD */,
 				EC44B5C11E9B1EED005FF88B /* TDDTests */,
 				EC44B5CC1E9B1EED005FF88B /* TDDUITests */,
+				EC0722261E9C666C002EDD14 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -293,6 +317,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 4BADWEEE97;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					EC44B5BD1E9B1EED005FF88B = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -361,6 +390,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC0722251E9C6530002EDD14 /* DetailViewController.swift in Sources */,
+				EC07222C1E9C6ADA002EDD14 /* InputViewController.swift in Sources */,
 				EC128B941E9B88C100E715C2 /* ItemCell.swift in Sources */,
 				EC44B5B01E9B1EED005FF88B /* demo.swift in Sources */,
 				EC128B8D1E9B7D2600E715C2 /* ItemListDataProvider.swift in Sources */,
@@ -382,7 +413,9 @@
 				EC128B901E9B810700E715C2 /* ItemListDataProviderTests.swift in Sources */,
 				EC128B961E9BB0C000E715C2 /* ItemCellTests.swift in Sources */,
 				EC128B891E9B780C00E715C2 /* ItemManagerTests.swift in Sources */,
+				EC07222A1E9C6A8E002EDD14 /* InputViewControllerTests.swift in Sources */,
 				EC44B5C31E9B1EED005FF88B /* TDDTests.swift in Sources */,
+				EC0722231E9C64C6002EDD14 /* DetailViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
