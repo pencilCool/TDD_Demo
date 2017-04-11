@@ -82,8 +82,20 @@ class APIClientTests: XCTestCase {
     }
     
     
+    func testLogin_ThrowsErrorWhenDataIsNil() {
+        var theError: Error?
+        let completion = { (error: Error?) in
+            theError = error
+        }
+        sut.loginUserWithName(username: "dasdom",
+                              password: "1234",
+                              completion: completion)
+        mockURLSession.completionHandler?(nil, nil, nil)
+        XCTAssertNotNil(theError)
+    }
+    
+    
 
- 
 }
 
 

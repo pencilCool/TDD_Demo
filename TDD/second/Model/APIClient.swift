@@ -38,14 +38,18 @@ class APIClient {
         { fatalError() }
         
         let task = session.dataTask(with: url) { (data, resonse, error) in
-            do {
-            let responseDict = try JSONSerialization.jsonObject(with: data!,options: []) as! [String:String]
             
-            let token = responseDict["token"]!  as String
-            self.keychainManager?.setPassword(password: token,
-                                              account: "token")
-            }catch{
-                completion(error)
+            if let theData = data
+            {
+                do {
+                let responseDict = try JSONSerialization.jsonObject(with: theData,options: []) as! [String:String]
+                
+                let token = responseDict["token"]!  as String
+                self.keychainManager?.setPassword(password: token,
+                                                  account: "token")
+                }catch{
+                    completion(error)
+                }
             }
             
         
