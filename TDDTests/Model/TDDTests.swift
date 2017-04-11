@@ -10,10 +10,10 @@ import XCTest
 @testable import TDD
 
 class TDDTests: XCTestCase {
-    var viewController: FirstChapter!
+    var viewController: demo!
     override func setUp() {
         super.setUp()
-        viewController = FirstChapter()
+        viewController = demo()
     }
     
     override func tearDown() {

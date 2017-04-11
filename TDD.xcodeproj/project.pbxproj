@@ -9,37 +9,27 @@
 /* Begin PBXBuildFile section */
 		EC128B651E9B5ABD00E715C2 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC128B641E9B5ABD00E715C2 /* ToDoItem.swift */; };
 		EC128B671E9B5F3600E715C2 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC128B661E9B5F3600E715C2 /* Location.swift */; };
-		EC128B6F1E9B612900E715C2 /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC128B6E1E9B612900E715C2 /* LocationTests.swift */; };
-		EC128B7D1E9B62AA00E715C2 /* ItemManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC128B7C1E9B62AA00E715C2 /* ItemManagerTests.swift */; };
 		EC128B851E9B62E800E715C2 /* ItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC128B841E9B62E800E715C2 /* ItemManager.swift */; };
+		EC128B871E9B780400E715C2 /* TodoItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44B5E91E9B5129005FF88B /* TodoItemTests.swift */; };
+		EC128B881E9B780900E715C2 /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC128B6E1E9B612900E715C2 /* LocationTests.swift */; };
+		EC128B891E9B780C00E715C2 /* ItemManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC128B7C1E9B62AA00E715C2 /* ItemManagerTests.swift */; };
+		EC128B8B1E9B78E100E715C2 /* ItemListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC128B8A1E9B78E100E715C2 /* ItemListViewControllerTests.swift */; };
+		EC128B8D1E9B7D2600E715C2 /* ItemListDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC128B8C1E9B7D2600E715C2 /* ItemListDataProvider.swift */; };
+		EC128B901E9B810700E715C2 /* ItemListDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC128B8F1E9B810700E715C2 /* ItemListDataProviderTests.swift */; };
+		EC128B941E9B88C100E715C2 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC128B931E9B88C100E715C2 /* ItemCell.swift */; };
+		EC128B961E9BB0C000E715C2 /* ItemCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC128B951E9BB0C000E715C2 /* ItemCellTests.swift */; };
 		EC44B5AE1E9B1EED005FF88B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44B5AD1E9B1EED005FF88B /* AppDelegate.swift */; };
-		EC44B5B01E9B1EED005FF88B /* FirstChapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44B5AF1E9B1EED005FF88B /* FirstChapter.swift */; };
+		EC44B5B01E9B1EED005FF88B /* demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44B5AF1E9B1EED005FF88B /* demo.swift */; };
 		EC44B5B31E9B1EED005FF88B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC44B5B11E9B1EED005FF88B /* Main.storyboard */; };
 		EC44B5B51E9B1EED005FF88B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC44B5B41E9B1EED005FF88B /* Assets.xcassets */; };
 		EC44B5B81E9B1EED005FF88B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC44B5B61E9B1EED005FF88B /* LaunchScreen.storyboard */; };
 		EC44B5C31E9B1EED005FF88B /* TDDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44B5C21E9B1EED005FF88B /* TDDTests.swift */; };
 		EC44B5CE1E9B1EED005FF88B /* TDDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44B5CD1E9B1EED005FF88B /* TDDUITests.swift */; };
-		EC44B5DC1E9B462E005FF88B /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44B5DB1E9B462E005FF88B /* MainMenu.swift */; };
-		EC44B5DE1E9B4B66005FF88B /* SecondChapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44B5DD1E9B4B66005FF88B /* SecondChapter.swift */; };
+		EC44B5DE1E9B4B66005FF88B /* ItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44B5DD1E9B4B66005FF88B /* ItemListViewController.swift */; };
 		EC44B5E21E9B4EF1005FF88B /* struct.png in Resources */ = {isa = PBXBuildFile; fileRef = EC44B5E11E9B4EF1005FF88B /* struct.png */; };
-		EC44B5EA1E9B5129005FF88B /* TodoItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44B5E91E9B5129005FF88B /* TodoItemTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		EC128B711E9B612900E715C2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EC44B5A21E9B1EED005FF88B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EC44B5A91E9B1EED005FF88B;
-			remoteInfo = TDD;
-		};
-		EC128B7F1E9B62AA00E715C2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EC44B5A21E9B1EED005FF88B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EC44B5A91E9B1EED005FF88B;
-			remoteInfo = TDD;
-		};
 		EC44B5BF1E9B1EED005FF88B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EC44B5A21E9B1EED005FF88B /* Project object */;
@@ -54,28 +44,22 @@
 			remoteGlobalIDString = EC44B5A91E9B1EED005FF88B;
 			remoteInfo = TDD;
 		};
-		EC44B5EC1E9B5129005FF88B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EC44B5A21E9B1EED005FF88B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EC44B5A91E9B1EED005FF88B;
-			remoteInfo = TDD;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		EC128B641E9B5ABD00E715C2 /* ToDoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
 		EC128B661E9B5F3600E715C2 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
-		EC128B6C1E9B612900E715C2 /* LocationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC128B6E1E9B612900E715C2 /* LocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
-		EC128B701E9B612900E715C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC128B7A1E9B62AA00E715C2 /* ItemManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ItemManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC128B7C1E9B62AA00E715C2 /* ItemManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemManagerTests.swift; sourceTree = "<group>"; };
-		EC128B7E1E9B62AA00E715C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC128B841E9B62E800E715C2 /* ItemManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemManager.swift; sourceTree = "<group>"; };
+		EC128B8A1E9B78E100E715C2 /* ItemListViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListViewControllerTests.swift; sourceTree = "<group>"; };
+		EC128B8C1E9B7D2600E715C2 /* ItemListDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListDataProvider.swift; sourceTree = "<group>"; };
+		EC128B8F1E9B810700E715C2 /* ItemListDataProviderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListDataProviderTests.swift; sourceTree = "<group>"; };
+		EC128B931E9B88C100E715C2 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		EC128B951E9BB0C000E715C2 /* ItemCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCellTests.swift; sourceTree = "<group>"; };
 		EC44B5AA1E9B1EED005FF88B /* TDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC44B5AD1E9B1EED005FF88B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EC44B5AF1E9B1EED005FF88B /* FirstChapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstChapter.swift; sourceTree = "<group>"; };
+		EC44B5AF1E9B1EED005FF88B /* demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demo.swift; sourceTree = "<group>"; };
 		EC44B5B21E9B1EED005FF88B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC44B5B41E9B1EED005FF88B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC44B5B71E9B1EED005FF88B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -86,30 +70,13 @@
 		EC44B5C91E9B1EED005FF88B /* TDDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC44B5CD1E9B1EED005FF88B /* TDDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDUITests.swift; sourceTree = "<group>"; };
 		EC44B5CF1E9B1EED005FF88B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC44B5DB1E9B462E005FF88B /* MainMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
-		EC44B5DD1E9B4B66005FF88B /* SecondChapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondChapter.swift; sourceTree = "<group>"; };
+		EC44B5DD1E9B4B66005FF88B /* ItemListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListViewController.swift; sourceTree = "<group>"; };
 		EC44B5DF1E9B4E89005FF88B /* secondChapter.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = secondChapter.playground; sourceTree = "<group>"; };
 		EC44B5E11E9B4EF1005FF88B /* struct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = struct.png; sourceTree = "<group>"; };
-		EC44B5E71E9B5129005FF88B /* SecondChaterTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecondChaterTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC44B5E91E9B5129005FF88B /* TodoItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItemTests.swift; sourceTree = "<group>"; };
-		EC44B5EB1E9B5129005FF88B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EC128B691E9B612900E715C2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EC128B771E9B62AA00E715C2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		EC44B5A71E9B1EED005FF88B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -131,44 +98,72 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC44B5E41E9B5129005FF88B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EC128B6D1E9B612900E715C2 /* LocationTests */ = {
+		EC128B861E9B773C00E715C2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				EC128B6E1E9B612900E715C2 /* LocationTests.swift */,
-				EC128B701E9B612900E715C2 /* Info.plist */,
+				EC128B841E9B62E800E715C2 /* ItemManager.swift */,
+				EC128B661E9B5F3600E715C2 /* Location.swift */,
+				EC128B641E9B5ABD00E715C2 /* ToDoItem.swift */,
 			);
-			path = LocationTests;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		EC128B7B1E9B62AA00E715C2 /* ItemManagerTests */ = {
+		EC128B8E1E9B7D4200E715C2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EC128B8C1E9B7D2600E715C2 /* ItemListDataProvider.swift */,
+				EC44B5DD1E9B4B66005FF88B /* ItemListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EC128B911E9B813600E715C2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				EC128B7C1E9B62AA00E715C2 /* ItemManagerTests.swift */,
-				EC128B7E1E9B62AA00E715C2 /* Info.plist */,
+				EC128B6E1E9B612900E715C2 /* LocationTests.swift */,
+				EC44B5C21E9B1EED005FF88B /* TDDTests.swift */,
+				EC44B5E91E9B5129005FF88B /* TodoItemTests.swift */,
 			);
-			path = ItemManagerTests;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EC128B921E9B814200E715C2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EC128B8F1E9B810700E715C2 /* ItemListDataProviderTests.swift */,
+				EC128B8A1E9B78E100E715C2 /* ItemListViewControllerTests.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EC128B971E9BB0C400E715C2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC128B951E9BB0C000E715C2 /* ItemCellTests.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		EC128B981E9BB31D00E715C2 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				EC128B931E9B88C100E715C2 /* ItemCell.swift */,
+			);
+			name = view;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		EC44B5A11E9B1EED005FF88B = {
 			isa = PBXGroup;
 			children = (
+				EC44B5AB1E9B1EED005FF88B /* Products */,
 				EC44B5AC1E9B1EED005FF88B /* TDD */,
 				EC44B5C11E9B1EED005FF88B /* TDDTests */,
 				EC44B5CC1E9B1EED005FF88B /* TDDUITests */,
-				EC44B5E81E9B5129005FF88B /* TodoItemTests */,
-				EC128B6D1E9B612900E715C2 /* LocationTests */,
-				EC128B7B1E9B62AA00E715C2 /* ItemManagerTests */,
-				EC44B5AB1E9B1EED005FF88B /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -178,9 +173,6 @@
 				EC44B5AA1E9B1EED005FF88B /* TDD.app */,
 				EC44B5BE1E9B1EED005FF88B /* TDDTests.xctest */,
 				EC44B5C91E9B1EED005FF88B /* TDDUITests.xctest */,
-				EC44B5E71E9B5129005FF88B /* SecondChaterTest.xctest */,
-				EC128B6C1E9B612900E715C2 /* LocationTests.xctest */,
-				EC128B7A1E9B62AA00E715C2 /* ItemManagerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -188,14 +180,13 @@
 		EC44B5AC1E9B1EED005FF88B /* TDD */ = {
 			isa = PBXGroup;
 			children = (
-				EC44B5AD1E9B1EED005FF88B /* AppDelegate.swift */,
-				EC44B5DB1E9B462E005FF88B /* MainMenu.swift */,
-				EC44B5AF1E9B1EED005FF88B /* FirstChapter.swift */,
 				EC44B5E01E9B4E98005FF88B /* second */,
-				EC44B5B11E9B1EED005FF88B /* Main.storyboard */,
+				EC44B5AD1E9B1EED005FF88B /* AppDelegate.swift */,
 				EC44B5B41E9B1EED005FF88B /* Assets.xcassets */,
-				EC44B5B61E9B1EED005FF88B /* LaunchScreen.storyboard */,
 				EC44B5B91E9B1EED005FF88B /* Info.plist */,
+				EC44B5B61E9B1EED005FF88B /* LaunchScreen.storyboard */,
+				EC44B5B11E9B1EED005FF88B /* Main.storyboard */,
+				EC44B5AF1E9B1EED005FF88B /* demo.swift */,
 			);
 			path = TDD;
 			sourceTree = "<group>";
@@ -203,7 +194,9 @@
 		EC44B5C11E9B1EED005FF88B /* TDDTests */ = {
 			isa = PBXGroup;
 			children = (
-				EC44B5C21E9B1EED005FF88B /* TDDTests.swift */,
+				EC128B971E9BB0C400E715C2 /* View */,
+				EC128B921E9B814200E715C2 /* Controller */,
+				EC128B911E9B813600E715C2 /* Model */,
 				EC44B5C41E9B1EED005FF88B /* Info.plist */,
 			);
 			path = TDDTests;
@@ -212,8 +205,8 @@
 		EC44B5CC1E9B1EED005FF88B /* TDDUITests */ = {
 			isa = PBXGroup;
 			children = (
-				EC44B5CD1E9B1EED005FF88B /* TDDUITests.swift */,
 				EC44B5CF1E9B1EED005FF88B /* Info.plist */,
+				EC44B5CD1E9B1EED005FF88B /* TDDUITests.swift */,
 			);
 			path = TDDUITests;
 			sourceTree = "<group>";
@@ -221,65 +214,18 @@
 		EC44B5E01E9B4E98005FF88B /* second */ = {
 			isa = PBXGroup;
 			children = (
-				EC44B5E11E9B4EF1005FF88B /* struct.png */,
-				EC44B5DD1E9B4B66005FF88B /* SecondChapter.swift */,
-				EC128B641E9B5ABD00E715C2 /* ToDoItem.swift */,
-				EC128B661E9B5F3600E715C2 /* Location.swift */,
-				EC128B841E9B62E800E715C2 /* ItemManager.swift */,
+				EC128B981E9BB31D00E715C2 /* view */,
+				EC128B8E1E9B7D4200E715C2 /* Controller */,
+				EC128B861E9B773C00E715C2 /* Model */,
 				EC44B5DF1E9B4E89005FF88B /* secondChapter.playground */,
+				EC44B5E11E9B4EF1005FF88B /* struct.png */,
 			);
-			name = second;
-			sourceTree = "<group>";
-		};
-		EC44B5E81E9B5129005FF88B /* TodoItemTests */ = {
-			isa = PBXGroup;
-			children = (
-				EC44B5E91E9B5129005FF88B /* TodoItemTests.swift */,
-				EC44B5EB1E9B5129005FF88B /* Info.plist */,
-			);
-			name = TodoItemTests;
-			path = SecondChaterTest;
+			path = second;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EC128B6B1E9B612900E715C2 /* LocationTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EC128B731E9B612900E715C2 /* Build configuration list for PBXNativeTarget "LocationTests" */;
-			buildPhases = (
-				EC128B681E9B612900E715C2 /* Sources */,
-				EC128B691E9B612900E715C2 /* Frameworks */,
-				EC128B6A1E9B612900E715C2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EC128B721E9B612900E715C2 /* PBXTargetDependency */,
-			);
-			name = LocationTests;
-			productName = LocationTests;
-			productReference = EC128B6C1E9B612900E715C2 /* LocationTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		EC128B791E9B62AA00E715C2 /* ItemManagerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EC128B811E9B62AA00E715C2 /* Build configuration list for PBXNativeTarget "ItemManagerTests" */;
-			buildPhases = (
-				EC128B761E9B62AA00E715C2 /* Sources */,
-				EC128B771E9B62AA00E715C2 /* Frameworks */,
-				EC128B781E9B62AA00E715C2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EC128B801E9B62AA00E715C2 /* PBXTargetDependency */,
-			);
-			name = ItemManagerTests;
-			productName = ItemManagerTests;
-			productReference = EC128B7A1E9B62AA00E715C2 /* ItemManagerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		EC44B5A91E9B1EED005FF88B /* TDD */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC44B5D21E9B1EED005FF88B /* Build configuration list for PBXNativeTarget "TDD" */;
@@ -333,24 +279,6 @@
 			productReference = EC44B5C91E9B1EED005FF88B /* TDDUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		EC44B5E61E9B5129005FF88B /* SecondChaterTest */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EC44B5EE1E9B5129005FF88B /* Build configuration list for PBXNativeTarget "SecondChaterTest" */;
-			buildPhases = (
-				EC44B5E31E9B5129005FF88B /* Sources */,
-				EC44B5E41E9B5129005FF88B /* Frameworks */,
-				EC44B5E51E9B5129005FF88B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EC44B5ED1E9B5129005FF88B /* PBXTargetDependency */,
-			);
-			name = SecondChaterTest;
-			productName = SecondChaterTest;
-			productReference = EC44B5E71E9B5129005FF88B /* SecondChaterTest.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -361,18 +289,6 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = tangyuhua;
 				TargetAttributes = {
-					EC128B6B1E9B612900E715C2 = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 4BADWEEE97;
-						ProvisioningStyle = Automatic;
-						TestTargetID = EC44B5A91E9B1EED005FF88B;
-					};
-					EC128B791E9B62AA00E715C2 = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 4BADWEEE97;
-						ProvisioningStyle = Automatic;
-						TestTargetID = EC44B5A91E9B1EED005FF88B;
-					};
 					EC44B5A91E9B1EED005FF88B = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 4BADWEEE97;
@@ -385,12 +301,6 @@
 						TestTargetID = EC44B5A91E9B1EED005FF88B;
 					};
 					EC44B5C81E9B1EED005FF88B = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 4BADWEEE97;
-						ProvisioningStyle = Automatic;
-						TestTargetID = EC44B5A91E9B1EED005FF88B;
-					};
-					EC44B5E61E9B5129005FF88B = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 4BADWEEE97;
 						ProvisioningStyle = Automatic;
@@ -414,28 +324,11 @@
 				EC44B5A91E9B1EED005FF88B /* TDD */,
 				EC44B5BD1E9B1EED005FF88B /* TDDTests */,
 				EC44B5C81E9B1EED005FF88B /* TDDUITests */,
-				EC44B5E61E9B5129005FF88B /* SecondChaterTest */,
-				EC128B6B1E9B612900E715C2 /* LocationTests */,
-				EC128B791E9B62AA00E715C2 /* ItemManagerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		EC128B6A1E9B612900E715C2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EC128B781E9B62AA00E715C2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		EC44B5A81E9B1EED005FF88B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -461,41 +354,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC44B5E51E9B5129005FF88B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		EC128B681E9B612900E715C2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EC128B6F1E9B612900E715C2 /* LocationTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EC128B761E9B62AA00E715C2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EC128B7D1E9B62AA00E715C2 /* ItemManagerTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		EC44B5A61E9B1EED005FF88B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC44B5B01E9B1EED005FF88B /* FirstChapter.swift in Sources */,
-				EC44B5DE1E9B4B66005FF88B /* SecondChapter.swift in Sources */,
+				EC128B941E9B88C100E715C2 /* ItemCell.swift in Sources */,
+				EC44B5B01E9B1EED005FF88B /* demo.swift in Sources */,
+				EC128B8D1E9B7D2600E715C2 /* ItemListDataProvider.swift in Sources */,
+				EC44B5DE1E9B4B66005FF88B /* ItemListViewController.swift in Sources */,
 				EC128B851E9B62E800E715C2 /* ItemManager.swift in Sources */,
 				EC128B651E9B5ABD00E715C2 /* ToDoItem.swift in Sources */,
-				EC44B5DC1E9B462E005FF88B /* MainMenu.swift in Sources */,
 				EC128B671E9B5F3600E715C2 /* Location.swift in Sources */,
 				EC44B5AE1E9B1EED005FF88B /* AppDelegate.swift in Sources */,
 			);
@@ -505,6 +376,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC128B8B1E9B78E100E715C2 /* ItemListViewControllerTests.swift in Sources */,
+				EC128B871E9B780400E715C2 /* TodoItemTests.swift in Sources */,
+				EC128B881E9B780900E715C2 /* LocationTests.swift in Sources */,
+				EC128B901E9B810700E715C2 /* ItemListDataProviderTests.swift in Sources */,
+				EC128B961E9BB0C000E715C2 /* ItemCellTests.swift in Sources */,
+				EC128B891E9B780C00E715C2 /* ItemManagerTests.swift in Sources */,
 				EC44B5C31E9B1EED005FF88B /* TDDTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -517,27 +394,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC44B5E31E9B5129005FF88B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EC44B5EA1E9B5129005FF88B /* TodoItemTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		EC128B721E9B612900E715C2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EC44B5A91E9B1EED005FF88B /* TDD */;
-			targetProxy = EC128B711E9B612900E715C2 /* PBXContainerItemProxy */;
-		};
-		EC128B801E9B62AA00E715C2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EC44B5A91E9B1EED005FF88B /* TDD */;
-			targetProxy = EC128B7F1E9B62AA00E715C2 /* PBXContainerItemProxy */;
-		};
 		EC44B5C01E9B1EED005FF88B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = EC44B5A91E9B1EED005FF88B /* TDD */;
@@ -548,11 +407,6 @@
 			target = EC44B5A91E9B1EED005FF88B /* TDD */;
 			targetProxy = EC44B5CA1E9B1EED005FF88B /* PBXContainerItemProxy */;
 		};
-		EC44B5ED1E9B5129005FF88B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EC44B5A91E9B1EED005FF88B /* TDD */;
-			targetProxy = EC44B5EC1E9B5129005FF88B /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -562,6 +416,7 @@
 				EC44B5B21E9B1EED005FF88B /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		EC44B5B61E9B1EED005FF88B /* LaunchScreen.storyboard */ = {
@@ -570,67 +425,12 @@
 				EC44B5B71E9B1EED005FF88B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		EC128B741E9B612900E715C2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 4BADWEEE97;
-				INFOPLIST_FILE = LocationTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tangyuhua.com.LocationTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDD.app/TDD";
-			};
-			name = Debug;
-		};
-		EC128B751E9B612900E715C2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 4BADWEEE97;
-				INFOPLIST_FILE = LocationTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tangyuhua.com.LocationTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDD.app/TDD";
-			};
-			name = Release;
-		};
-		EC128B821E9B62AA00E715C2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 4BADWEEE97;
-				INFOPLIST_FILE = ItemManagerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tangyuhua.com.ItemManagerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDD.app/TDD";
-			};
-			name = Debug;
-		};
-		EC128B831E9B62AA00E715C2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 4BADWEEE97;
-				INFOPLIST_FILE = ItemManagerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tangyuhua.com.ItemManagerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDD.app/TDD";
-			};
-			name = Release;
-		};
 		EC44B5D01E9B1EED005FF88B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -806,53 +606,9 @@
 			};
 			name = Release;
 		};
-		EC44B5EF1E9B5129005FF88B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 4BADWEEE97;
-				INFOPLIST_FILE = SecondChaterTest/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tangyuhua.com.SecondChaterTest;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDD.app/TDD";
-			};
-			name = Debug;
-		};
-		EC44B5F01E9B5129005FF88B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 4BADWEEE97;
-				INFOPLIST_FILE = SecondChaterTest/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tangyuhua.com.SecondChaterTest;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDD.app/TDD";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EC128B731E9B612900E715C2 /* Build configuration list for PBXNativeTarget "LocationTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EC128B741E9B612900E715C2 /* Debug */,
-				EC128B751E9B612900E715C2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		EC128B811E9B62AA00E715C2 /* Build configuration list for PBXNativeTarget "ItemManagerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EC128B821E9B62AA00E715C2 /* Debug */,
-				EC128B831E9B62AA00E715C2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
 		EC44B5A51E9B1EED005FF88B /* Build configuration list for PBXProject "TDD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -885,15 +641,6 @@
 			buildConfigurations = (
 				EC44B5D91E9B1EED005FF88B /* Debug */,
 				EC44B5DA1E9B1EED005FF88B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EC44B5EE1E9B5129005FF88B /* Build configuration list for PBXNativeTarget "SecondChaterTest" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EC44B5EF1E9B5129005FF88B /* Debug */,
-				EC44B5F01E9B5129005FF88B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
