@@ -7,6 +7,12 @@
 //
 
 import Foundation
+
+enum WebserviceError : Error {
+    case DataEmptyError
+    case ResponseError
+}
+
 class APIClient {
     
     var keychainManager: KeychainAccessible?
@@ -39,6 +45,12 @@ class APIClient {
         
         let task = session.dataTask(with: url) { (data, resonse, error) in
             
+            if error != nil {
+                completion(WebserviceError.ResponseError)
+                return
+            }
+            
+            
             if let theData = data
             {
                 do {
@@ -50,6 +62,9 @@ class APIClient {
                 }catch{
                     completion(error)
                 }
+            } else {
+                completion(WebserviceError.DataEmptyError)
+
             }
             
         

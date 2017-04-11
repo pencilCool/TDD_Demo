@@ -83,6 +83,7 @@ class APIClientTests: XCTestCase {
     
     
     func testLogin_ThrowsErrorWhenDataIsNil() {
+        
         var theError: Error?
         let completion = { (error: Error?) in
             theError = error
@@ -92,7 +93,31 @@ class APIClientTests: XCTestCase {
                               completion: completion)
         mockURLSession.completionHandler?(nil, nil, nil)
         XCTAssertNotNil(theError)
+        
     }
+    
+    func testLogin_ThrowsErrorWhenResponseHasError() {
+        
+        var theError: Error?
+        let completion = { (error: Error?) in
+            theError = error
+        }
+        sut.loginUserWithName(username: "dasdom",
+                              password: "1234",
+                              completion: completion)
+        let responseDict = ["token" : "1234567890"]
+        let responseData = try! JSONSerialization.data(withJSONObject: responseDict,
+            options: [])
+        
+        let error = NSError(domain: "SomeError", code:
+            1234, userInfo: nil)
+        mockURLSession.completionHandler?(responseData, nil, error)
+        XCTAssertNotNil(theError)
+        
+    }
+        
+        
+        
     
     
 
