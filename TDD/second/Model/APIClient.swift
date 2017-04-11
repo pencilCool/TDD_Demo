@@ -18,7 +18,7 @@ class APIClient {
     
     func loginUserWithName(username: String,
                            password: String,
-                           completion: (Error?) -> Void) {
+                           completion: @escaping (Error?) -> Void) {
         
         
         let allowedCharacters = NSCharacterSet(charactersIn:"/%&=?$#+-~@<>|\\*,.()[]{}^!").inverted
@@ -38,13 +38,15 @@ class APIClient {
         { fatalError() }
         
         let task = session.dataTask(with: url) { (data, resonse, error) in
+            do {
+            let responseDict = try JSONSerialization.jsonObject(with: data!,options: []) as! [String:String]
             
-            
-            let responseDict = try! JSONSerialization.jsonObject(with: data!,options: []) as! [String:String]
-            
-            let token = responseDict["token"]  as String!
-            self.keychainManager?.setPassword(password: token!,
+            let token = responseDict["token"]!  as String
+            self.keychainManager?.setPassword(password: token,
                                               account: "token")
+            }catch{
+                completion(error)
+            }
             
         
         }
