@@ -36,7 +36,7 @@ class InputViewControllerTests: XCTestCase {
     
     func testSave_UsesGeocoderToGetCoordinateFromAddress() {
         sut.titleTextField.text = "Test Title"
-        sut.dateTextField.text = "02/22/2016"
+        sut.dateTextField.text = "11/04/2017"
         sut.locationTextField.text = "Office"
         sut.addressTextField.text = "Infinite Loop 1, Cupertino"
         sut.descriptionTextField.text = "Test Description"
@@ -52,10 +52,23 @@ class InputViewControllerTests: XCTestCase {
         let item = sut.itemManager?.itemAtIndex(0)
         let testItem = ToDoItem(title: "Test Title",
                                 itemDescription: "Test Description",
-                                timestamp: 1456095600,
+                                timestamp: 1509724800,
                                 location: Location(name: "Office", coordinate: coordinate))
         XCTAssertEqual(item, testItem)
     }
+    
+    
+    func test_SaveButtonHasSaveAction() {
+        let saveButton: UIButton = sut.saveButton
+        guard let actions = saveButton.actions(forTarget: sut,
+                                                        forControlEvent: .touchUpInside) else {
+                                                            XCTFail(); return
+        }
+        XCTAssertTrue(actions.contains("save"))
+    }
+    
+    
+    
 
     
 }

@@ -16,7 +16,7 @@ class InputViewController: UIViewController {
      @IBOutlet weak var addressTextField: UITextField!
      @IBOutlet weak var descriptionTextField: UITextField!
 
-    
+    @IBOutlet weak var saveButton:UIButton!
     
     
     
@@ -43,7 +43,7 @@ class InputViewController: UIViewController {
     
     
     
-    func save() {
+    @IBAction func save() {
         
         
         guard let titleString = titleTextField.text, titleString.characters.count > 0 else { return }

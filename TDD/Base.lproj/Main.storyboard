@@ -129,6 +129,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKL-tq-9rV">
+                                <rect key="frame" x="262" y="265" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="save" destination="QGS-3r-gnf" eventType="touchUpInside" id="99m-On-9ef"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -137,6 +145,7 @@
                         <outlet property="dateTextField" destination="B5R-DB-QNK" id="5GA-m1-EwP"/>
                         <outlet property="descriptionTextField" destination="304-lU-NcH" id="qm8-2h-R4f"/>
                         <outlet property="locationTextField" destination="Gds-gW-W6b" id="MXf-2T-YiY"/>
+                        <outlet property="saveButton" destination="gKL-tq-9rV" id="Ica-gi-haS"/>
                         <outlet property="titleTextField" destination="b4Y-ig-PBA" id="kuu-YF-Qwu"/>
                     </connections>
                 </viewController>
