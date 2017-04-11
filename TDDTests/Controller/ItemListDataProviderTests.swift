@@ -99,7 +99,6 @@ class ItemListDataProviderTests: XCTestCase {
     func testCellInSectionTwo_GetsConfiguredWithDoneItem() {
         let mockTableView = MockTableView.mockTableViewWithDataSource(sut)
  
-        
         let firstItem = ToDoItem(title: "First",
                                  itemDescription: "First description")
         sut.itemManager?.addItem(firstItem)
@@ -107,10 +106,8 @@ class ItemListDataProviderTests: XCTestCase {
                                   itemDescription: "Second description")
         sut.itemManager?.addItem(secondItem)
         sut.itemManager?.checkItemAtIndex(1)
-        
         mockTableView.reloadData()
- 
-        
+
         let cell = mockTableView.cellForRow(at: IndexPath(row: 0, section: 1)) as! MockItemCell
          XCTAssertEqual(cell.toDoItem, secondItem)
     }

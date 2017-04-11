@@ -10,12 +10,28 @@ import XCTest
 @testable import TDD
 class ItemListViewControllerTests: XCTestCase {
     var sut: ItemListViewController!
-    
+    var inputViewController :InputViewController!
+    var mockTableView: MockTableView!
     override func setUp() {
         super.setUp()
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         sut = storyboard.instantiateViewController(withIdentifier: "ItemListViewController") as! ItemListViewController
         _ = sut.view
+        UIApplication.shared.keyWindow?.rootViewController = sut
+        
+        XCTAssertNil(sut.presentedViewController)
+        guard let addButton = sut.navigationItem.rightBarButtonItem else
+        { XCTFail(); return }
+        
+        sut.perform(addButton.action!, with: addButton)
+        XCTAssertNotNil(sut.presentedViewController)
+        XCTAssertTrue(sut.presentedViewController is InputViewController)
+        inputViewController = sut.presentedViewController as!
+        InputViewController
+        
+        
+        mockTableView = MockTableView(frame: CGRect(x: 10, y: 10, width: 10, height: 10), style: .plain)
+    
     }
     
     override func tearDown() {
@@ -48,23 +64,48 @@ class ItemListViewControllerTests: XCTestCase {
     
     
     func testAddItem_PresentsAddItemViewController() {
-        XCTAssertNil(sut.presentedViewController)
-        guard let addButton = sut.navigationItem.rightBarButtonItem else
-        { XCTFail(); return }
-        UIApplication.shared.keyWindow?.rootViewController = sut
-        sut.perform(addButton.action!, with: addButton)
-        XCTAssertNotNil(sut.presentedViewController)
-        XCTAssertTrue(sut.presentedViewController is InputViewController)
-        
-        let inputViewController = sut.presentedViewController as!
-        InputViewController
+
         XCTAssertNotNil(inputViewController.titleTextField)
         
         
     }
+ 
     
-    
+    func testItemListVC_SharesItemManagerWithInputVC() {
 
+        guard let inputItemManager = inputViewController.itemManager else { XCTFail(); return }
+        XCTAssertTrue(sut.itemManager === inputItemManager)
+    }
     
+    func testViewDidLoad_SetsItemManagerToDataProvider() {
+        XCTAssertTrue(sut.itemManager === sut.dataProvider.itemManager)
+    }
+    
+    func testTableViewReload_whenItemManagerChanged() {
+        
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        sut = storyboard.instantiateViewController(withIdentifier: "ItemListViewController") as! ItemListViewController
+        sut.tableView = mockTableView
+        _ = sut.view
+        UIApplication.shared.keyWindow?.rootViewController = sut
+        sut.beginAppearanceTransition(true, animated: true)
+        sut.endAppearanceTransition()
+        XCTAssertTrue(mockTableView.tableViewReload)
+
+    }
+
+}
+
+extension ItemListViewControllerTests {
+    
+    class MockTableView : UITableView {
+        var tableViewReload = false
+        override func reloadData() {
+            tableViewReload = true
+        }
+       
+    }
+
 }
 

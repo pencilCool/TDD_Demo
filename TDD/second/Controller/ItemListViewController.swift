@@ -9,24 +9,41 @@ import UIKit
 class ItemListViewController: UIViewController {
     
     @IBOutlet var dataProvider: protocol<UITableViewDataSource,
-    UITableViewDelegate>!
+    UITableViewDelegate,ItemManagerSettable>!
     
    @IBOutlet var tableView: UITableView!
     
+    
+    let itemManager = ItemManager()
+    
+    
     @IBAction func addItem(_ sender: Any) {
         
+     
         
-        present(InputViewController(),
-                              animated: true,
-                              completion: nil)
+        if let nextViewController = storyboard?.instantiateViewController(withIdentifier: "InputViewController")
+        as? InputViewController {
+            
+            nextViewController.itemManager = self.itemManager
+            present(nextViewController, animated: true,
+                                  completion: nil)
+        }
         
         
         
     }
     
+    
+    
     override func viewDidLoad() {
         tableView.dataSource = dataProvider
         tableView.delegate = dataProvider
+        dataProvider.itemManager = itemManager
 
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
     }
 }
