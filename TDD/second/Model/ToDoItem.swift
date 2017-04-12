@@ -23,6 +23,17 @@ struct ToDoItem:Equatable {
         self.location = location
     }
     
+    init?(dict: NSDictionary) {
+        return nil
+    }
+
+    
+    
+    var plistDict: NSDictionary {
+        return [:]
+
+    }
+    
     static func ==(lhs: ToDoItem, rhs: ToDoItem) -> Bool {
         
         

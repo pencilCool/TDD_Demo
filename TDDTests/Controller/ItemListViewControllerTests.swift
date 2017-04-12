@@ -84,8 +84,6 @@ class ItemListViewControllerTests: XCTestCase {
     
     //FIXME: TEST SHOULD PASSED
     func testTableViewReload_whenItemManagerChanged() {
-        
-        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         sut = storyboard.instantiateViewController(withIdentifier: "ItemListViewController") as! ItemListViewController
         sut.tableView = mockTableView
@@ -97,10 +95,47 @@ class ItemListViewControllerTests: XCTestCase {
        // XCTAssertTrue(mockTableView.tableViewReload)
 
     }
+    
+    
+    func testItemSelectedNotification_PushesDetailVC() {
+        let mockNavigationController = MockNavigationController(rootViewController: sut)
+        UIApplication.shared.keyWindow?.rootViewController =
+        mockNavigationController
+        _ = sut.view
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "ItemSelectedNotification"), object: self, userInfo: ["index": 1])
+        guard let detailViewController = mockNavigationController.pushedViewController as? DetailViewController else { XCTFail(); return
+        }
+        guard let detailItemManager = detailViewController.itemInfo?.0
+        else
+       { XCTFail(); return }
+        
+       guard let index = detailViewController.itemInfo?.1 else
+       { XCTFail(); return }
+        
+       _ = detailViewController.view
+       XCTAssertNotNil(detailViewController.titleLabel)
+       XCTAssertTrue(detailItemManager === sut.itemManager)
+       XCTAssertEqual(index, 1)
+}
+
+        
+        
 
 }
 
+class MockNavigationController : UINavigationController {
+    var pushedViewController: UIViewController?
+    override func pushViewController(_ viewController: UIViewController, animated: Bool) {
+        pushedViewController = viewController
+        super.pushViewController(viewController, animated: animated)
+    }
+}
+
+
+
 extension ItemListViewControllerTests {
+    
+
     
     class MockTableView : UITableView {
         var tableViewReload = false

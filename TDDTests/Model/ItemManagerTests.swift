@@ -18,7 +18,9 @@ class ItemManagerTests: XCTestCase {
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        sut.removeAllItems()
+        sut = nil
+
         super.tearDown()
     }
     
@@ -100,12 +102,20 @@ class ItemManagerTests: XCTestCase {
     }
  
     
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func test_ToDoItemsGetSerialized() {
+        var itemManager: ItemManager? = ItemManager()
+        let firstItem = ToDoItem(title: "First")
+        itemManager!.addItem(firstItem)
+        let secondItem = ToDoItem(title: "Second")
+        itemManager!.addItem(secondItem)
+        NotificationCenter.default.post(name: NSNotification.Name.UIApplicationWillResignActive, object: nil)
+        itemManager = nil
+        XCTAssertNil(itemManager)
+        itemManager = ItemManager()
+        XCTAssertEqual(itemManager?.toDoCount, 2)
+        XCTAssertEqual(itemManager?.itemAtIndex(0), firstItem)
+        XCTAssertEqual(itemManager?.itemAtIndex(1), secondItem)
     }
+
     
 }

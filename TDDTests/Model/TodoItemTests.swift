@@ -16,7 +16,7 @@ class ToDoItemTests: XCTestCase {
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+      
         super.tearDown()
     }
     
@@ -90,18 +90,29 @@ class ToDoItemTests: XCTestCase {
         let secondItem = ToDoItem(title: "Second title")
         XCTAssertNotEqual(firstItem, secondItem)
     }
-
-    
-
-
     
     
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func test_HasPlistDictionaryProperty() {
+        let item = ToDoItem(title: "First")
+        let dictionary = item.plistDict
+        
+        XCTAssertNotNil(dictionary)
+        XCTAssertTrue(dictionary is NSDictionary)
+        
     }
+    
+    func test_CanBeCreatedFromPlistDictionary() {
+        let location = Location(name: "Home")
+        let item = ToDoItem(title: "The Title",
+                            itemDescription: "The Description",
+                            timestamp: 1.0,
+                            location: location)
+        let dict = item.plistDict
+        let recreatedItem = ToDoItem(dict: dict)
+        XCTAssertEqual(item, recreatedItem)
+    }
+    
+
+    
     
 }

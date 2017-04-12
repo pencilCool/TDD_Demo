@@ -133,12 +133,16 @@ class LocationTests: XCTestCase {
         
     }
 
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func test_CanBeSerializedAndDeserialized() {
+        let location = Location(name: "Home",
+                                coordinate: CLLocationCoordinate2DMake(50.0, 6.0))
+        let dict = location.plistDict
+        
+         XCTAssertNotNil(dict)
+        let recreatedLocation = Location(dict: dict)
+        XCTAssertEqual(location, recreatedLocation)
+        
     }
+
     
 }

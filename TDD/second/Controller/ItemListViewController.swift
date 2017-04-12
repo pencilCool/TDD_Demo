@@ -39,6 +39,12 @@ class ItemListViewController: UIViewController {
         tableView.dataSource = dataProvider
         tableView.delegate = dataProvider
         dataProvider.itemManager = itemManager
+        NotificationCenter.default.addObserver(self,
+                                                         selector: Selector(("showDetails:")),
+                                                         name: NSNotification.Name(rawValue: "ItemSelectedNotification"),
+                                                         object: nil)
+        
+        
 
     }
     
@@ -46,4 +52,23 @@ class ItemListViewController: UIViewController {
         super.viewWillAppear(animated)
         tableView.reloadData()
     }
+    
+    func showDetials(sender:NSNotification) {
+        guard let index = sender.userInfo?["index"] as? Int else {
+            fatalError()
+        }
+        if let nextViewController = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as?
+            DetailViewController {
+            nextViewController.itemInfo = (itemManager, index)
+            navigationController?.pushViewController(nextViewController, animated: true)
+        }
+    
+    
+        
+        
+        
+    }
+    
+
+        
 }
